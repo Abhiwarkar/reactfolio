@@ -2,9 +2,9 @@ import"./app.scss"
 import Test from "./components/Test";
 import Navbar from "./components/navbar/Navbar";
 import Parallax from "./components/parallax/Parallax";
-import Portfolio from "./components/portfolio/portfolio";
+import Portfolio from "./components/portfolio/Portfolio";
 import Services from "./components/services/Services";
-import Hero from "./components/sidebar/hero/hero";
+import Hero from "./components/sidebar/hero/Hero";
 import Contact from "./components/contact/Contact";
 import Cursor from "./components/cursor/Cursor";
 

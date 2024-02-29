@@ -1,0 +1,120 @@
+.contact {
+    height: 100%;
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center items horizontally */
+    animation: fadeIn 1s ease forwards; /* Apply fade-in animation */
+}
+
+.textContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    animation: slideInUp 1s ease forwards; /* Apply slide-in-up animation */
+}
+
+.textContainer h1 {
+    font-size: 100px;
+    line-height: 88px;
+    animation: scaleIn 1s ease forwards; /* Apply scale-in animation */
+}
+
+.textContainer span {
+    font-weight: 300;
+}
+
+.formContainer {
+    flex: 1;
+    position: relative; /* Ensure proper positioning for animations */
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start; /* Align items to the start (left) */
+        animation: slideInRight 1s ease forwards; /* Apply slide-in-right animation */
+    }
+
+    input, textarea {
+        padding: 20px;
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+        border-radius: 5px;
+        width: 100%; /* Set input width to 100% */
+        max-width: 800px; /* Add maximum width to prevent it from stretching too much */
+    }
+
+    button {
+        padding: 20px;
+        border: none;
+        background-color: orange;
+        cursor: pointer;
+        font-weight: 500;
+        width: 100%; /* Set button width to 100% */
+        max-width: 800px; /* Add maximum width to prevent it from stretching too much */
+        animation: fadeIn 1s ease forwards; /* Apply fade-in animation */
+    }
+}
+
+/* Define keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Move flexbox containing "Name", "Email", "Message", and "Submit" to the right */
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Center items vertically */
+    position: absolute; /* Position flexbox absolutely */
+    top: 0; /* Align flexbox to the top of its container */
+    right: 0; /* Align flexbox to the right of its container */
+    padding: 20px; /* Add padding for spacing */
+}
+
+.item {
+    margin-bottom: 25px; /* Add space between items */
+}
+

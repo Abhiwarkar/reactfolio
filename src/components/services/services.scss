@@ -1,0 +1,112 @@
+.services {
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.titlecontainer {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.titlecontainer .title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.titlecontainer .title img {
+  width: 250px;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.titlecontainer .title .text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.titlecontainer .title .button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titlecontainer .title button.big-button {
+  width: 300px;
+  height: 80px;
+  border-radius: 40px;
+  background-color: yellow !important;
+  border: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.titlecontainer .title .helping-text {
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.listcontainer {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.listcontainer .box {
+  padding: 100px; /* Increase padding for larger boxes */
+  background-color: #00008B;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 2px solid white; /* Add white border */
+}
+
+.listcontainer .box h2 {
+  font-size: 48px; /* Increase font size */
+  color: white;
+  margin-top: 0; /* Remove default margin */
+}
+
+.listcontainer .box p {
+  font-size: 24px; /* Increase font size */
+  color: white;
+  margin-top: 0; /* Remove default margin */
+ 
+}
+
+.listcontainer .box button {
+  padding: 20px 40px; /* Increase padding for larger buttons */
+  background-color: orange;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 24px; /* Increase font size */
+  color: white;
+}
+
+
+/* Change text color to black on hover */
+.listcontainer .box:hover h2,
+.listcontainer .box:hover p,
+.listcontainer .box:hover button {
+  color: black;
+}
